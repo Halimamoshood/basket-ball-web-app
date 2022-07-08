@@ -1,0 +1,42 @@
+body {
+    background-image: url('../img/abc.jpg');
+    /* august-phlieger.jpg */
+    color: white;
+}
+
+header {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 66px;
+    border-bottom: 1px solid orange;
+    /* width: max-content; */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-image: url('../img/stock-photo-basketball.jpg'); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    margin-bottom: 50px;
+}
+
+.card {
+    text-align: center;
+    /* background-color: white; */
+    /* color: white; */
+    border: 1px solid orange;
+    width: 300px;
+    box-shadow: 0 2px 0 0 grey;
+    border-radius: 25px;
+    margin-right: 13px;
+}
+
+.nav_btn {
+    width: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+}

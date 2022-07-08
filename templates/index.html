@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    B-Ball 3-Six-0
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="card">
+        <h3>GAMES STATS</h3>
+        <small>for current page</small>
+        
+        {% for key, game in games.items() %}
+            <!-- {% if loop.index0 < 6 %} -->
+                <hr/>
+                <p>
+                    <em>{{ key }}</em> - (<b>{{ game }}</b>)
+                </p>
+            <!-- {% endif %} -->
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container">
+
+    <a href="{{url_for('games_stats_prv_api')}}">
+        <button class="nav_btn">
+            <p>Previous</p>
+        </button>    
+    </a>
+
+    <a href="{{url_for('games_stats_nxt_api')}}">
+        <button class="nav_btn">
+            <p>Next</p>
+        </button>  
+    </a>
+</div>
+
+<div class="container">
+    <img src="/static/img/chart.png">
+</div>
+
+
+{% endblock %}
